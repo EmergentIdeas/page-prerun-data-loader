@@ -2,7 +2,7 @@
 	"name": "@dankolz/page-prerun-data-loader",
 	"version": "1.0.0",
 	"description": "",
-	"main": "/server-js/add-data-directory.js",
+	"main": "server-js/add-data-directory.js",
 	"scripts": {
 		"test": "node_modules/mocha/bin/mocha",
 		"dev-server-js-watch": "onchange 'server-js/**/*.js' -- pm2 restart $npm_package_name-web",
@@ -34,7 +34,7 @@
 		]
 	},
 	"files": [
-		"/server-js/page-pre-data-loader.js",
+		"/server-js/page-prerun-data-loader.js",
 		"/server-js/add-data-directory.js",
 		"README.md"
 	],
