@@ -1,0 +1,9 @@
+{
+	"title": "Pre Run Data Loader",
+	"dataFiles": [
+		{
+			"name": "testData",
+			"location": "test2.json"
+		}
+	]
+}

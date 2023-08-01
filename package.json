@@ -1,0 +1,45 @@
+{
+	"name": "@dankolz/page-prerun-data-loader",
+	"version": "1.0.0",
+	"description": "",
+	"main": "/server-js/add-data-directory.js",
+	"scripts": {
+		"test": "node_modules/mocha/bin/mocha",
+		"dev-server-js-watch": "onchange 'server-js/**/*.js' -- pm2 restart $npm_package_name-web",
+		"start": "node ./web-server.js",
+		"testDebug": "node --inspect-brk node_modules/mocha/bin/mocha",
+		"pm2-bg": "parallelshell 'npm run dev-server-js-watch'",
+		"dev": "parallelshell 'npm run start'"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"browserify": "^14.4.0",
+		"chai": "^4.3.4",
+		"exorcist": "^2.0.0",
+		"express": "^4.17.1",
+		"input-value-injector": "^1.0.8",
+		"jsdoc": "^3.6.11",
+		"less": "^3.10.3",
+		"mocha": "^9.1.3",
+		"onchange": "^3.2.1",
+		"parallelshell": "3.0.1",
+		"uglify-js": "^3.6.0",
+		"webhandle": "^1.0.26"
+	},
+	"browserify": {
+		"transform": [
+			"tripartite/browserify-transform"
+		]
+	},
+	"files": [
+		"/server-js/page-pre-data-loader.js",
+		"/server-js/add-data-directory.js",
+		"README.md"
+	],
+	"dependencies": {
+		"file-sink": "^1.0.9",
+		"filter-log": "^1.0.3"
+	}
+}
